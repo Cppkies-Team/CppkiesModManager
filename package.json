@@ -1,0 +1,38 @@
+{
+	"name": "cppkies-mod-manager",
+	"private": true,
+	"version": "0.0.0",
+	"description": "The Cppkies-flavored mod manager for cookie clicker.",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"prodBuild": "env NODE_ENV=production npm run build",
+		"build": "npx webpack",
+		"watch": "env NODE_ENV=development npx webpack --watch"
+	},
+	"main": "./dist/index.js",
+	"keywords": [
+		"cppkies"
+	],
+	"author": "Cppkies Team",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/firefox-webext-browser": "^82.0.0",
+		"@types/react": "^17.0.0",
+		"@types/react-dom": "^17.0.0",
+		"@types/sortablejs": "^1.10.6",
+		"@types/styled-components": "^5.1.7",
+		"html-webpack-plugin": "^4.5.1",
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1",
+		"react-sortablejs": "^6.0.0",
+		"sortablejs": "^1.13.0",
+		"styled-components": "^5.2.1",
+		"ts-loader": "^8.0.14",
+		"typescript": "^4.1.2",
+		"webpack": "^5.19.0",
+		"webpack-cli": "^4.4.0"
+	},
+	"dependencies": {
+		"webextension-polyfill": "^0.7.0"
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"name": "Cppkies Mod Manager",
+	"version": "0.0.0",
+	"description": "e",
+	"applications": {
+		"gecko": {
+			"id": "cppkiesmodmanager@glander.club",
+			"strict_min_version": "54.0"
+		}
+	},
+	"homepage_url": "https://github.com/Cppkies-Team/CppkiesModManager",
+	"manifest_version": 2,
+	"icons": {
+		"48": "./static/Cppkies48x48.png"
+	},
+	"permissions": ["storage"],
+	"browser_action": {
+		"browser_style": false,
+		"default_icon": "./static/Cppkies48x48.png",
+		"default_title": "Cppkies Mod Manager",
+		"default_popup": "./dist/popup.html"
+	}
+}
