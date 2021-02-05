@@ -54,7 +54,7 @@ const ModList: React.FC<{
 				>
 					{items.map(val => (
 						<ModListing
-							key={val.keyname}
+							key={val.id}
 							mod={val}
 							updateMod={updateMod}
 							deleteMod={deleteMod}

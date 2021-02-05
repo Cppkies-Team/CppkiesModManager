@@ -1,7 +1,7 @@
 {
 	"name": "Cppkies Mod Manager",
-	"version": "0.0.0",
-	"description": "e",
+	"version": "1.0.0",
+	"description": "The Cppkies-flavored mod manager for cookie clicker.",
 	"applications": {
 		"gecko": {
 			"id": "cppkiesmodmanager@glander.club",
@@ -11,7 +11,8 @@
 	"homepage_url": "https://github.com/Cppkies-Team/CppkiesModManager",
 	"manifest_version": 2,
 	"icons": {
-		"48": "./static/Cppkies48x48.png"
+		"48": "./static/Cppkies48x48.png",
+		"128": "./static/Cppkies128.png"
 	},
 	"permissions": ["storage"],
 	"browser_action": {
@@ -19,5 +20,16 @@
 		"default_icon": "./static/Cppkies48x48.png",
 		"default_title": "Cppkies Mod Manager",
 		"default_popup": "./dist/popup.html"
-	}
+	},
+	"content_scripts": [
+		{
+			"matches": ["*://orteil.dashnet.org/cookieclicker/*"],
+			"js": ["./dist/outerContent.js"]
+		},
+		{
+			"matches": ["*://ccrepo.glander.club/*"],
+			"js": ["./dist/ccrepoContent.js"]
+		}
+	],
+	"web_accessible_resources": ["dist/innerContent.js"]
 }

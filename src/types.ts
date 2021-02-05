@@ -19,8 +19,10 @@ export interface Mod {
 	 * The link to the code of the mod
 	 */
 	entrypoint: string
-	// TODO: packageLink
-
+	/**
+	 * The link to the package.json of the mod
+	 */
+	packageLink?: string
 	//! Cppkies Mod Manager exclusive!
 	disabled: boolean
 	unknown?: boolean

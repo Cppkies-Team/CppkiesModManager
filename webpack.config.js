@@ -3,8 +3,10 @@ const HTMLPlugin = require("html-webpack-plugin")
 
 module.exports = {
 	entry: {
-		content: path.resolve("./src/index.ts"),
+		outerContent: path.resolve("./src/cc-content-outer.ts"),
 		popup: path.resolve("./src/popup/index.tsx"),
+		innerContent: path.resolve("./src/cc-content-inner.ts"),
+		ccrepoContent: path.resolve("./src/ccrepo-content.ts"),
 	},
 	output: {
 		filename: "[name].js",

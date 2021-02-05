@@ -1,21 +1,23 @@
 {
 	"name": "cppkies-mod-manager",
 	"private": true,
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "The Cppkies-flavored mod manager for cookie clicker.",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"prodBuild": "env NODE_ENV=production npm run build",
 		"build": "npx webpack",
-		"watch": "env NODE_ENV=development npx webpack --watch"
+		"watch": "env NODE_ENV=development npx webpack --watch",
+		"pack-ext": "rm Cppkies-Mod-Manager.zip -f && zip Cppkies-Mod-Manager dist manifest.json static -r",
+		"extprepublish": "npm run prodBuild && npm run pack-ext"
 	},
-	"main": "./dist/index.js",
 	"keywords": [
 		"cppkies"
 	],
 	"author": "Cppkies Team",
 	"license": "MIT",
 	"devDependencies": {
+		"@types/cookieclicker": "^2.31.3",
 		"@types/firefox-webext-browser": "^82.0.0",
 		"@types/react": "^17.0.0",
 		"@types/react-dom": "^17.0.0",
