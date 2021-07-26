@@ -27,6 +27,10 @@
 			"js": ["./dist/outerContent.js"]
 		},
 		{
+			"matches": ["*://cookieclicker.eu/cookieclicker/*"],
+			"js": ["./dist/ccrepoContent.js"]
+		},
+		{
 			"matches": ["*://ccrepo.glander.club/*"],
 			"js": ["./dist/ccrepoContent.js"]
 		}
