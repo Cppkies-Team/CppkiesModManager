@@ -23,7 +23,7 @@
 	},
 	"content_scripts": [
 		{
-			"matches": ["*://orteil.dashnet.org/cookieclicker/*"],
+			"matches": ["*://orteil.dashnet.org/cookieclicker/*", "*://cookieclicker.eu/cookieclicker/*"],
 			"js": ["./dist/outerContent.js"]
 		},
 		{
